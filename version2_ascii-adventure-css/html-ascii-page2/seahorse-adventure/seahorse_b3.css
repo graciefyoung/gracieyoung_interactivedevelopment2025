@@ -1,0 +1,45 @@
+@font-face {
+    font-family: MyCustomFont;
+    src: url(../seahorse-adventure/HugMeTight-GzZq.ttf) format('truetype');
+}
+
+body{
+    font-family:'MyCustomFont', sans-serif;
+    font-size: 18px;
+    color: darkturquoise;
+    background-color: papayawhip;
+}
+
+.highlight-word{
+color:darkorange;
+font-weight:bold;
+}
+
+
+.hover-link{
+    font-family: MyCustomFont, sans-serif;
+    text-decoration: none;
+    color:darkorange
+}
+
+
+.hover-link:hover{
+    color:pink;
+    text-decoration: underline;
+    transition:color 0.3s ease;
+}
+
+.resized-image{
+    width: 60%;
+    height:auto;
+}
+
+
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+
+
