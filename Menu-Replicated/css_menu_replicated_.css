@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "myfont";
+  src: url("../Menu-Replicated/ChampagneAndLimousines-7KRB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+    
+}
+body {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-family: "myfont", sans-serif;
+  color: black;
+  font-size:10px;
+}
+
+.summer_2012{
+    font-weight:bolder;
+    font-size:7px;
+    letter-spacing: 1px;
+}
+
+.special-font {
+  font-family: "fancyfont", sans-serif;
+}
+
+.Canlis {
+  color: rgb(182, 150, 57);
+  font-size:12px;
+  position: relative;
+  text-align:left;
+  z-index:1;
+
+}
+
+.Canlis::before{
+content:"";
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+width: 450px;
+height:450px;
+background-image:url("../Menu-Replicated/tree.png");
+background-size: contain;
+background-repeat:no-repeat;
+background-position:center;
+z-index:0;
+}
+
+.Canlis h1 {
+  position: relative;
+  z-index:1;
+}
+
+.chefs_tasting_menu {
+  color: rgb(182, 150, 57);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.menu-container {
+  max-width: 600px;
+  margin: 0 auto; 
+  text-align: left;
+  background-color: rgb(251, 248, 244);
+  padding:50px;
+  padding-bottom:70px;
+  padding-right: 80px;
+  padding-top: 80px;
+}
+
+
+.strawberry{
+    font-size:13;
+}
+
+.italic_words{
+  font-style:italic;
+}
+
+.bold-text{
+    font-weight:bold;
+}
+
+.original-menu {
+  display:block;
+  text-align:center;
+  margin-top:200px;
+  color:rgb(182, 150, 57);
+  text-decoration:underline;
+  font-size: 12px;
+  
+}
+
+.original-menu:hover{
+  color:blue;
+  letter-spacing: 1px;
+  cursor:pointer;
+}
+
