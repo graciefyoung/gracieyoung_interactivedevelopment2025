@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "myfont";
+  src: url("../custom_menu/BellamoraFreePersonalUseReg-ov6Wa.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+    
+}
+body {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-family: "myfont", sans-serif;
+  color: rgb(39, 0, 21);
+  font-size:16px;
+  font-weight: 900;
+
+}
+
+.sweet_sweeter{
+    font-weight:bolder;
+    font-size:40px;
+    letter-spacing: 1px;
+    color:rgb(112, 28, 60);
+  
+}
+
+
+
+.alignment-background {
+  max-width: 600px;
+  margin: 0 auto; 
+  text-align: left;
+  padding:50px;
+  padding-bottom:400px;
+  padding-right: 100px;
+  padding-top: 100px;
+  background-image:url("../custom_menu/background.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+.italic_words{
+  font-style:italic;
+}
+
+.bold-text{
+    font-weight:bold;
+}
+
+.foodtitle{
+  color:rgb(112, 28, 60);
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+.breakfast_cusine{
+  font-size: 18px;
+}
