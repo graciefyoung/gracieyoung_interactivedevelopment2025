@@ -1,0 +1,39 @@
+@font-face {
+  font-family: myfont;
+  src: url(../gracieyoung_interactivedevelopment2025/Arb218BigBluntMar50Normal-q1Y2.ttf);
+}
+
+.header{
+  color: rgb(95, 95, 223);
+  font-size: 25px;
+}
+
+body{
+  font-family:"myfont", sans-serif;
+  background-color:pink;
+  font-size: 15px;
+}
+
+.ascii-adventure {
+  color: green;
+  font-size: 18px;
+}
+
+.ascii-adventure a {
+  color: green;
+  text-decoration: underline; /* optional: removes underline */
+}
+
+.ascii-adventure a:hover {
+  color: peru; /* optional hover color */
+}
+
+
+.main-content {
+  text-align: center;
+}
+
+.projects{
+  font-size: 20px;
+  color:peru
+}
