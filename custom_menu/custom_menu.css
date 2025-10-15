@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
   font-family: "myfont", sans-serif;
-  color: rgb(39, 0, 21);
+  color: rgb(255, 255, 255);
   font-size:16px;
   font-weight: 900;
 
@@ -21,27 +21,34 @@ body {
 
 .sweet_sweeter{
     font-weight:bolder;
-    font-size:40px;
+    font-size:50px;
     letter-spacing: 1px;
-    color:rgb(112, 28, 60);
+    color:rgb(238, 159, 189);
   
 }
 
 
 
 .alignment-background {
+  position: relative;
   max-width: 600px;
   margin: 0 auto; 
   text-align: left;
-  padding:50px;
-  padding-bottom:400px;
-  padding-right: 100px;
-  padding-top: 100px;
-  background-image:url("../custom_menu/background.jpg");
-  background-size:cover;
+  padding: 50px 100px 400px 50px;
+  background-image: url("../custom_menu/background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  z-index: 0;
+}
 
+/* Warm tinted overlay for readability */
+.alignment-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(80, 30, 40, 0.4); /* warm rose-brown tint, 55% opacity */
+  z-index: -1;
 }
 
 .italic_words{
@@ -53,11 +60,16 @@ body {
 }
 
 .foodtitle{
-  color:rgb(112, 28, 60);
+  color:rgb(238, 159, 189);
   font-weight: 1000;
   font-size: 25px;
 }
 
 .breakfast_cusine{
   font-size: 18px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
 }
