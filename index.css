@@ -21,11 +21,11 @@ body{
 
 .ascii-adventure a {
   color: green;
-  text-decoration: underline; /* optional: removes underline */
+  text-decoration: underline; /* removes underline */
 }
 
 .ascii-adventure a:hover {
-  color: peru; /* optional hover color */
+  color: peru; /* hover color */
 }
 
 
@@ -35,5 +35,9 @@ body{
 
 .projects{
   font-size: 20px;
+  color:peru
+}
+
+.classmates{
   color:peru
 }
