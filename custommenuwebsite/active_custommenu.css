@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-/* Reset & Base Styles */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ html, body {
   background-color: #ffffff;
 }
 
-/* Header Section */
+
 .header-image {
   position: relative;
   width: 100%;
@@ -30,7 +30,7 @@ html, body {
   z-index: 0;
 }
 
-/* Overlay for readability */
+
 .header-image::before {
   content: "";
   position: absolute;
@@ -61,19 +61,19 @@ html, body {
   letter-spacing: 1px;
 }
 
-/* ===  TWO-COLUMN MENU GRID === */
+
 .menu-row {
   display: flex;
-  justify-content: space-between; /* pushes left & right items to the edges */
+  justify-content: space-between; 
   align-items: flex-start;
   gap: 40px;
   margin: 40px auto;
   width: 100%;
-  padding: 0 60px; /* small padding to avoid touching the edge completely */
+  padding: 0 60px; 
   box-sizing: border-box;
 }
 
-/* Each side (left & right) */
+
 .image-text-row {
   flex: 1;
   display: flex;
@@ -82,7 +82,7 @@ html, body {
   max-width: 600px;
 }
 
-/* Image styles */
+
 .side-image {
   width: 350px;
   height: 350px;
@@ -92,7 +92,7 @@ html, body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Text beside the image */
+
 .text-beside-image {
   color: rgb(112, 28, 60);
   font-size: 25px;
@@ -111,13 +111,13 @@ html, body {
   font-weight: bold;
 }
 
-/* Right side version */
+
 .image-text-row.right {
   flex-direction: row-reverse;
   text-align: right;
 }
 
-/* Responsive design for mobile */
+
 @media (max-width: 900px) {
   .menu-row {
     flex-direction: column;
