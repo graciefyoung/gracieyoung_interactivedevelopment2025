@@ -86,11 +86,11 @@ h1.bounce {
 }
 
 /* Animation delays (updated from .word to .box) */
-.box:nth-child(1) { animation-delay: 1.2s; width: 10%; }
-.box:nth-child(2) { animation-delay: 1.7s; width: 30%; }
-.box:nth-child(3) { animation-delay: 2.2s; width: 50%; }
-.box:nth-child(4) { animation-delay: 2.7s; width: 70%; }
-.box:nth-child(5) { animation-delay: 3.2s; width: 80%; }
+.box:nth-child(1) { animation-delay: 1.2s; width: 20rem; }
+.box:nth-child(2) { animation-delay: 1.7s; width: 40rem; }
+.box:nth-child(3) { animation-delay: 2.2s; width: 60rem; }
+.box:nth-child(4) { animation-delay: 2.7s; width: 80rem; }
+.box:nth-child(5) { animation-delay: 3.2s; width: 90rem; }
 
 
 /* === Rise Animation === */
@@ -104,35 +104,57 @@ h1.bounce {
 .slide-word {
   position: absolute;
   top: 0;
-  font-size: 5rem;
+  left:100%;
+  font-size: 3rem;
   color: rgb(229, 199, 157);
   opacity: 0;
-  transform: translateX(15rem);
+  transform: translateX(6rem);
   transition: all 0.8s ease;
   white-space: nowrap;
 }
 
-/* Slide-word positions (left % unchanged) */
-#director { left: 140%; }
-#genre { left: 140%; }
-#actor { left: 110%; }
-#actress { left: 110%; }
-#date { left: 105%; }
-
 .slide-word.show {
   opacity: 1;
-  transform: translateX(0);
+}
+html, body {
+  overflow-x: hidden; /* this gets rid of left and right scrolling since Kang stated it wasnt user friendly */
+  overflow-y: auto; /* this adds vertical scroll for smaller devices like phones */
 }
 
 /* === RESPONSIVE === */
+/* --- Tablet and medium screens --- */
 @media (max-width: 1200px) {
   .box { font-size: 5rem; }
   .slide-word { font-size: 4rem; }
 }
 
+/* --- Phone layout --- */
 @media (max-width: 768px) {
   h1 { font-size: 6rem; }
-  .box { font-size: 4rem; }
-  .slide-word { font-size: 3rem; left: 150%; }
+
+  .box { 
+    font-size: 4rem;
+    width: 90vw; 
+  }
+
+  /* slide-word BELOW box on phones */
+  .slide-word {
+    position: relative;   /* not absolute */
+    left: 0;
+    top: 1rem;
+    display: block;
+    transform: none;
+    font-size: 3rem;
+    white-space: normal;  /* allows wrapping */
+    margin-left: 0;
+  }
+
+  .slide-word.show {
+    opacity: 1;
+  }
 }
+
+
+
+
 

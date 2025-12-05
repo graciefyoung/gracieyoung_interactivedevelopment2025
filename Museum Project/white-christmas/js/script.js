@@ -1,23 +1,23 @@
 const phrase = "My dear partner, when what's left of you gets around to what's left to be gotten, what's left to be gotten won't be worth getting, whatever it is you've got left.";
 
-const words = phrase.split(" "); /* splits up the words as they fall down and puts a space in between them */
+$(".bounce") .on ("click", function() {
+const words = phrase.split(" "); // split phrase into words
 
-words.forEach((word, i) => {
-  const span = document.createElement("span"); 
-  span.classList.add("word");
-  span.textContent = word;
+$.each(words, function(i, word) {
+    // create span with class "word" and set text
+    const $span = $("<span>").addClass("word").text(word);
 
-   /* the section above loops the words over one another and adds an index each time and has the span for each word   */
+    // random horizontal placement
+    $span.css("left", Math.random() * 80 + 5 + "vw");
 
-  // random horizontal placement
-  span.style.left = Math.random() * 90 + "vw";
+    // random fall speed
+    const duration = Math.random() * 3 + 3; // 3–6 seconds
+    $span.css("animation-duration", duration + "s");
 
-  // random fall speed
-  const duration = Math.random() * 3 + 3; // 3–6 seconds
-  span.style.animationDuration = duration + "s";
+    // staggered delay
+    $span.css("animation-delay", i * 0.3 + "s");
 
-  // staggered delays so words fall one after another
-  span.style.animationDelay = i * 0.3 + "s";
-
-  document.body.appendChild(span);
+    // append to body
+    $("body").append($span);
+});
 });

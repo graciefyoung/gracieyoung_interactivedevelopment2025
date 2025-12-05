@@ -1,10 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(".box");
+document.addEventListener("DOMContentLoaded", () => {  // this runs the code onces the full html part of the coding is ran on the website
+  const boxes = document.querySelectorAll(".box");  //this searches for all the box descriptions
 
-  boxes.forEach(box => {
-    box.addEventListener("click", () => {
-      // Close any currently open slide words
-      document.querySelectorAll(".slide-word.show").forEach(el => 
+  boxes.forEach(box => {  //this runs the code for each box the code finds 
+
+    box.addEventListener("click", () => { //when the box is clicked a function happens 
+      // Closes any currently open slide words
+      document.querySelectorAll(".slide-word.show").forEach(el => //this line and the one below states that when clicked first remove the word before and then show the new one for the clicked box
         el.classList.remove("show")
       );
 
@@ -13,11 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (slideWord) slideWord.classList.add("show");
     });
 
-    // Optional: allow keyboard "Enter" to trigger
-    box.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        box.click();
-      }
-    });
+   
   });
 });
